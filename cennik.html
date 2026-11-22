@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cennik | Modrzewiowa Studio Urody</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --accent:#C78363;
+    --accent-dark:#A9664B;
+    --brown:#5A4036;
+
+    --gray:#9B8A81;
+    --gray-dark:#7F6F67;
+
+    --background:#FBF8F5;
+
+    --text:#59463F;
+    --text-light:#8B756C;
+
+    --border:#EADFD7;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:var(--background);
+    color:var(--text);
+    font-family:'Montserrat',sans-serif;
+}
+
+/* CONTENT */
+
+.container{
+    max-width:1000px;
+    margin:35px auto;
+    padding:0 20px;
+}
+
+.price-box{
+    background:white;
+    border-radius:12px;
+    padding:40px;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+        0 2px 8px rgba(90,64,54,.05),
+        0 8px 24px rgba(90,64,54,.08);
+}
+
+/* TITLES */
+
+.page-title{
+    margin:0 0 15px;
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    font-weight:600;
+
+    color:var(--accent-dark);
+}
+
+.price-box h2{
+    text-align:center;
+    margin-top:0;
+
+    color:var(--accent-dark);
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.4rem;
+}
+
+.price-box p{
+    text-align:center;
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    max-width:800px;
+    margin:0 auto 40px;
+}
+
+/* CENNIK */
+
+.price-section{
+    margin-bottom:40px;
+}
+
+.price-section h3{
+    color:var(--brown);
+
+    border-bottom:2px solid var(--accent);
+
+    padding-bottom:10px;
+    margin-bottom:15px;
+}
+
+.price-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #EFE5DE;
+}
+
+.price-item:last-child{
+    border-bottom:none;
+}
+
+.service{
+    font-weight:500;
+}
+
+.price{
+    font-weight:700;
+    color:var(--accent-dark);
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+    margin-top:40px;
+}
+
+.button{
+    display:inline-block;
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    color:white;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+.button-back{
+    background:var(--gray);
+}
+
+.button-back:hover{
+    background:var(--gray-dark);
+}
+
+.button-booksy{
+    background:var(--accent);
+}
+
+.button-booksy:hover{
+    background:var(--accent-dark);
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:60px;
+    padding:25px 20px;
+
+    color:var(--text-light);
+
+    text-align:center;
+    font-size:.9rem;
+
+    border-top:1px solid var(--border);
+}
+
+footer p{
+    margin:0;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .container{
+        margin:25px auto;
+    }
+
+    .price-box{
+        padding:25px;
+    }
+
+    .page-title{
+        font-size:2.8rem;
+    }
+
+    .price-box h2{
+        font-size:2rem;
+    }
+
+    .price-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="price-box">
+
+        <h1 class="page-title">Aktualny cennik usług</h1>
+
+
+        <p>
+            Poniżej znajdziesz aktualne ceny oferowanych usług.
+            Szczegóły oraz dostępne terminy sprawdzisz również podczas
+            rezerwacji online.
+        </p>
+
+        <div class="price-section">
+
+            <h3>Manicure i pedicure</h3>
+
+            <div class="price-item">
+                <span class="service">Manicure hybrydowy</span>
+                <span class="price">XX zł</span>
+            </div>
+
+            <div class="price-item">
+                <span class="service">Przedłużenie paznokci żelem</span>
+                <span class="price">XX zł</span>
+            </div>
+
+            <div class="price-item">
+                <span class="service">Uzupełnienie żelu</span>
+                <span class="price">XX zł</span>
+            </div>
+
+            <div class="price-item">
+                <span class="service">Pedicure kosmetyczny</span>
+                <span class="price">XX zł</span>
+            </div>
+
+            <div class="price-item">
+                <span class="service">Pedicure hybrydowy</span>
+                <span class="price">XX zł</span>
+            </div>
+
+            <div class="price-item">
+                <span class="service">Zdjęcie stylizacji</span>
+                <span class="price">XX zł</span>
+            </div>
+
+        </div>
+
+        <div class="price-section">
+
+            <h3>Makijaż</h3>
+
+            <div class="price-item">
+                <span class="service">Makijaż okazjonalny</span>
+                <span class="price">XX zł</span>
+            </div>
+
+            <div class="price-item">
+                <span class="service">Makijaż ślubny</span>
+                <span class="price">XX zł</span>
+            </div>
+
+            <div class="price-item">
+                <span class="service">Makijaż próbny</span>
+                <span class="price">XX zł</span>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="index.html" class="button button-back">
+                ← Powrót do strony głównej
+            </a>
+
+            <a href="https://booksy.com/pl-pl/121304_no-to-pieknie-wizaz-i-kosmetyka_paznokcie_22068_bydgoszcz"
+               target="_blank"
+               class="button button-booksy">
+                Umów wizytę
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Modrzewiowa Studio Urody</p>
+</footer>
+
+</body>
+</html>

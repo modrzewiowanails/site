@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Galeria | Modrzewiowa Studio Urody</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --accent:#C78363;
+    --accent-dark:#A9664B;
+    --brown:#5A4036;
+
+    --gray:#9B8A81;
+    --gray-dark:#7F6F67;
+
+    --background:#FBF8F5;
+
+    --text:#59463F;
+    --text-light:#8B756C;
+
+    --border:#EADFD7;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:var(--background);
+    color:var(--text);
+    font-family:'Montserrat',sans-serif;
+}
+
+/* CONTENT */
+
+.container{
+    max-width:1400px;
+    margin:35px auto;
+    padding:0 20px;
+}
+
+.gallery-box{
+    background:white;
+    border-radius:12px;
+    padding:40px;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+        0 2px 8px rgba(90,64,54,.05),
+        0 8px 24px rgba(90,64,54,.08);
+}
+
+/* TITLES */
+
+.page-title{
+    margin:0 0 15px;
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    font-weight:600;
+
+    color:var(--accent-dark);
+}
+
+.gallery-box h2{
+    margin-top:0;
+
+    text-align:center;
+
+    color:var(--accent-dark);
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.4rem;
+    font-weight:600;
+}
+
+.gallery-box p{
+    max-width:850px;
+    margin:0 auto 40px;
+
+    text-align:center;
+    line-height:1.8;
+
+    color:var(--text-light);
+}
+
+/* GALLERY */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:24px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:360px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.05);
+}
+
+.gallery-grid img:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(90,64,54,.15);
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+    margin-top:40px;
+}
+
+.button{
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+.button-back{
+    background:var(--gray);
+}
+
+.button-back:hover{
+    background:var(--gray-dark);
+}
+
+.button-booksy{
+    background:var(--accent);
+}
+
+.button-booksy:hover{
+    background:var(--accent-dark);
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:60px;
+    padding:25px 20px;
+
+    color:var(--text-light);
+
+    text-align:center;
+    font-size:.9rem;
+
+    border-top:1px solid var(--border);
+}
+
+footer p{
+    margin:0;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .container{
+        margin:25px auto;
+    }
+
+    .gallery-box{
+        padding:25px;
+    }
+
+    .page-title{
+        font-size:2.8rem;
+    }
+
+    .gallery-box h2{
+        font-size:2rem;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid img{
+        height:280px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="gallery-box">
+
+        <h1 class="page-title">Galeria realizacji</h1>
+
+        <p>
+            Wybrane realizacje wykonane z dbałością o każdy detal.
+            Regularnie poszerzamy galerię o nowe stylizacje manicure,
+            pedicure oraz makijaże okazjonalne.
+        </p>
+
+        <div class="gallery-grid">
+
+            <img src="galeria1.jpg" alt="Stylizacja 1">
+            <img src="galeria2.jpg" alt="Stylizacja 2">
+            <img src="galeria3.jpg" alt="Stylizacja 3">
+            <img src="galeria4.jpg" alt="Stylizacja 4">
+            <img src="galeria5.jpg" alt="Stylizacja 5">
+            <img src="galeria6.jpg" alt="Stylizacja 6">
+            <img src="galeria7.jpg" alt="Stylizacja 7">
+            <img src="galeria8.jpg" alt="Stylizacja 8">
+            <img src="galeria9.jpg" alt="Stylizacja 9">
+            <img src="galeria10.jpg" alt="Stylizacja 10">
+            <img src="galeria11.jpg" alt="Stylizacja 11">
+            <img src="galeria12.jpg" alt="Stylizacja 12">
+            <img src="galeria13.jpg" alt="Stylizacja 13">
+            <img src="galeria14.jpg" alt="Stylizacja 14">
+            <img src="galeria15.jpg" alt="Stylizacja 15">
+            <img src="galeria16.jpg" alt="Stylizacja 16">
+            <img src="galeria17.jpg" alt="Stylizacja 17">
+            <img src="galeria18.jpg" alt="Stylizacja 18">
+            <img src="galeria19.jpg" alt="Stylizacja 19">
+            <img src="galeria20.jpg" alt="Stylizacja 20">
+            <img src="galeria21.jpg" alt="Stylizacja 21">
+            <img src="galeria22.jpg" alt="Stylizacja 22">
+            <img src="galeria23.jpg" alt="Stylizacja 23">
+            <img src="galeria24.jpg" alt="Stylizacja 24">
+            <img src="galeria25.jpg" alt="Stylizacja 25">
+            <img src="galeria26.jpg" alt="Stylizacja 26">
+            <img src="galeria27.jpg" alt="Stylizacja 27">
+            <img src="galeria28.jpg" alt="Stylizacja 28">
+            <img src="galeria29.jpg" alt="Stylizacja 29">
+            <img src="galeria30.jpg" alt="Stylizacja 30">
+<img src="galeria31.jpg" alt="Stylizacja 31">
+<img src="galeria32.jpg" alt="Stylizacja 32">
+<img src="galeria33.jpg" alt="Stylizacja 33">
+<img src="galeria34.jpg" alt="Stylizacja 34">
+<img src="galeria35.jpg" alt="Stylizacja 35">
+<img src="galeria36.jpg" alt="Stylizacja 36">
+<img src="galeria37.jpg" alt="Stylizacja 37">
+<img src="galeria38.jpg" alt="Stylizacja 38">
+<img src="galeria39.jpg" alt="Stylizacja 39">
+<img src="galeria40.jpg" alt="Stylizacja 40">
+<img src="galeria41.jpg" alt="Stylizacja 41">
+<img src="galeria42.jpg" alt="Stylizacja 42">
+<img src="galeria43.jpg" alt="Stylizacja 43">
+<img src="galeria44.jpg" alt="Stylizacja 44">
+<img src="galeria45.jpg" alt="Stylizacja 45">
+<img src="galeria46.jpg" alt="Stylizacja 46">
+<img src="galeria47.jpg" alt="Stylizacja 47">
+<img src="galeria48.jpg" alt="Stylizacja 48">
+<img src="galeria49.jpg" alt="Stylizacja 49">
+<img src="galeria50.jpg" alt="Stylizacja 50">
+<img src="galeria51.jpg" alt="Stylizacja 51">
+<img src="galeria52.jpg" alt="Stylizacja 52">
+<img src="galeria53.jpg" alt="Stylizacja 53">
+<img src="galeria54.jpg" alt="Stylizacja 54">
+<img src="galeria55.jpg" alt="Stylizacja 55">
+<img src="galeria56.jpg" alt="Stylizacja 56">
+<img src="galeria57.jpg" alt="Stylizacja 57">
+<img src="galeria58.jpg" alt="Stylizacja 58">
+<img src="galeria59.jpg" alt="Stylizacja 59">
+<img src="galeria60.jpg" alt="Stylizacja 60">
+<img src="galeria61.jpg" alt="Stylizacja 61">
+<img src="galeria62.jpg" alt="Stylizacja 62">
+<img src="galeria63.jpg" alt="Stylizacja 63">
+<img src="galeria64.jpg" alt="Stylizacja 64">
+<img src="galeria65.jpg" alt="Stylizacja 65">
+<img src="galeria66.jpg" alt="Stylizacja 66">
+<img src="galeria67.jpg" alt="Stylizacja 67">
+<img src="galeria68.jpg" alt="Stylizacja 68">
+<img src="galeria69.jpg" alt="Stylizacja 69">
+<img src="galeria70.jpg" alt="Stylizacja 70">
+<img src="galeria71.jpg" alt="Stylizacja 71">
+<img src="galeria72.jpg" alt="Stylizacja 72">
+<img src="galeria73.jpg" alt="Stylizacja 73">
+<img src="galeria74.jpg" alt="Stylizacja 74">
+<img src="galeria75.jpg" alt="Stylizacja 75">
+<img src="galeria76.jpg" alt="Stylizacja 76">
+<img src="galeria77.jpg" alt="Stylizacja 77">
+<img src="galeria78.jpg" alt="Stylizacja 78">
+<img src="galeria79.jpg" alt="Stylizacja 79">
+<img src="galeria80.jpg" alt="Stylizacja 80">
+<img src="galeria81.jpg" alt="Stylizacja 81">
+<img src="galeria82.jpg" alt="Stylizacja 82">
+<img src="galeria83.jpg" alt="Stylizacja 83">
+<img src="galeria84.jpg" alt="Stylizacja 84">
+<img src="galeria85.jpg" alt="Stylizacja 85">
+<img src="galeria86.jpg" alt="Stylizacja 86">
+<img src="galeria87.jpg" alt="Stylizacja 87">
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="index.html" class="button button-back">
+                ← Powrót do strony głównej
+            </a>
+
+            <a href="https://booksy.com/pl-pl/121304_no-to-pieknie-wizaz-i-kosmetyka_paznokcie_22068_bydgoszcz"
+               target="_blank"
+               class="button button-booksy">
+                Umów wizytę
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Modrzewiowa Studio Urody</p>
+</footer>
+
+</body>
+</html>

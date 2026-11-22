@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kontakt | Modrzewiowa Studio Urody</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --accent:#C78363;
+    --accent-dark:#A9664B;
+    --brown:#5A4036;
+
+    --gray:#9B8A81;
+    --gray-dark:#7F6F67;
+
+    --background:#FBF8F5;
+
+    --text:#59463F;
+    --text-light:#8B756C;
+
+    --border:#EADFD7;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:var(--background);
+    color:var(--text);
+    font-family:'Montserrat',sans-serif;
+}
+
+/* CONTENT */
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.contact-box{
+    background:white;
+    border-radius:12px;
+    padding:50px 40px;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+        0 2px 8px rgba(90,64,54,.05),
+        0 8px 24px rgba(90,64,54,.08);
+
+    text-align:center;
+}
+
+.page-title{
+    margin:0 0 15px;
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    font-weight:600;
+
+    color:var(--accent-dark);
+}
+
+.contact-box h2{
+    margin:0 0 25px;
+
+    color:var(--accent-dark);
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.3rem;
+    font-weight:600;
+}
+
+.contact-box p{
+    max-width:650px;
+    margin:0 auto 40px;
+
+    line-height:1.9;
+
+    color:var(--text-light);
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+    margin-top:20px;
+}
+
+.button{
+    display:inline-block;
+
+    min-width:220px;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+.button-back{
+    background:var(--gray);
+}
+
+.button-back:hover{
+    background:var(--gray-dark);
+}
+
+.button-booksy{
+    background:var(--accent);
+}
+
+.button-booksy:hover{
+    background:var(--accent-dark);
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:60px;
+    padding:25px 20px;
+
+    color:var(--text-light);
+
+    text-align:center;
+    font-size:.9rem;
+
+    border-top:1px solid var(--border);
+}
+
+footer p{
+    margin:0;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .container{
+        margin:25px auto;
+    }
+
+    .contact-box{
+        padding:25px;
+    }
+
+    .page-title{
+        font-size:2.8rem;
+    }
+
+    .contact-box h2{
+        font-size:2rem;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .button{
+        width:100%;
+        min-width:auto;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="contact-box">
+
+        <h1 class="page-title">Kontakt</h1>
+
+        <h2>Modrzewiowa Studio Urody</h2>
+
+        <p>
+            Zapraszamy do kontaktu poprzez Facebook, Instagram
+            oraz do rezerwacji wizyty online. Chętnie odpowiemy
+            na pytania dotyczące usług oraz dostępnych terminów.
+        </p>
+
+        <div class="buttons">
+
+            <a href="https://www.facebook.com/profile.php?id=100008602985310"
+               target="_blank"
+               class="button button-back">
+                Facebook
+            </a>
+
+            <a href="https://instagram.com/notopieknie_iwonabienkowska"
+               target="_blank"
+               class="button button-back">
+                Instagram
+            </a>
+
+            <a href="https://booksy.com/pl-pl/121304_no-to-pieknie-wizaz-i-kosmetyka_paznokcie_22068_bydgoszcz"
+               target="_blank"
+               class="button button-booksy">
+                Umów wizytę
+            </a>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="index.html"
+               class="button button-back">
+                ← Powrót do strony głównej
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Modrzewiowa Studio Urody</p>
+</footer>
+
+</body>
+</html>

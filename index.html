@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modrzewiowa Studio Urody</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --cream:#F4EAE1;
+    --accent:#C78363;
+    --accent-dark:#A9664B;
+    --sand:#D8C6B7;
+    --brown:#5A4036;
+    --background:#FBF8F5;
+    --text:#59463F;
+    --text-light:#8B756C;
+    --border:#EADFD7;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:var(--background);
+    color:var(--text);
+    font-family:'Montserrat',sans-serif;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+
+.hero-image{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+}
+
+.visually-hidden{
+    position:absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    padding:0;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+/* CONTENT */
+
+.container{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* CARDS */
+
+.profile-card,
+.links-card{
+    background:#FFFCFA;
+    border-radius:12px;
+    padding:35px;
+    border:1px solid var(--border);
+
+    box-shadow:
+        0 2px 8px rgba(90,64,54,.05),
+        0 8px 24px rgba(90,64,54,.08);
+}
+
+.profile-top{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:25px;
+}
+
+.profile-top img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid var(--cream);
+}
+
+.profile-info h2{
+    margin:0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.4rem;
+    color:var(--accent-dark);
+}
+
+.profile-info p{
+    color:var(--text-light);
+    margin-top:8px;
+}
+
+.about-text p{
+    line-height:1.9;
+    margin-bottom:18px;
+    color:var(--text);
+}
+
+/* MENU */
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.links a{
+    text-decoration:none;
+    text-align:center;
+    padding:16px 20px;
+    border-radius:8px;
+
+    background:var(--accent);
+    color:white;
+
+    font-weight:600;
+    letter-spacing:.3px;
+
+    transition:.3s;
+}
+
+.links a:hover{
+    background:var(--accent-dark);
+    transform:translateY(-2px);
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:60px;
+    padding:25px 20px;
+
+    color:var(--text-light);
+
+    text-align:center;
+    font-size:.9rem;
+
+    border-top:1px solid var(--border);
+}
+
+footer p{
+    margin:0;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .content{
+        grid-template-columns:1fr;
+    }
+
+    .profile-card,
+    .links-card{
+        padding:25px;
+    }
+
+    .profile-top{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile-top img{
+        width:120px;
+        height:120px;
+    }
+
+    .profile-info h2{
+        font-size:2rem;
+    }
+
+    .container{
+        margin:30px auto;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <h1 class="visually-hidden">
+        Modrzewiowa Studio Urody - Manicure, Pedicure i Makijaż Okazjonalny
+    </h1>
+
+    <img src="baner.png"
+         alt="Modrzewiowa Studio Urody"
+         class="hero-image">
+
+</section>
+
+<div class="container">
+
+    <div class="content">
+
+        <section>
+
+            <div class="profile-card">
+
+              
+
+                <div class="about-text">
+
+                    <p>
+                        Witaj w Modrzewiowa Studio Urody Bydgoszcz. To miejsce stworzone
+                        z myślą o kobietach, które chcą zadbać o siebie
+                        w komfortowej i przyjaznej atmosferze.
+                    </p>
+
+                    <p>
+                        Oferujemy profesjonalny manicure, pedicure oraz makijaż
+                        okazjonalny wykonywane z najwyższą starannością i
+                        dbałością o każdy detal. Każda usługa jest dopasowana
+                        indywidualnie do Twoich potrzeb, aby podkreślić naturalne
+                        piękno i zapewnić wyjątkowy efekt.
+                    </p>
+
+                    <p>
+                        Zapraszamy do zapoznania się z ofertą, obejrzenia galerii
+                        realizacji oraz rezerwacji wizyty.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <aside>
+
+            <div class="links-card">
+
+                <div class="links">
+
+                    <a href="kontakt.html">Kontakt</a>
+
+                    <a href="galeria.html">Galeria</a>
+
+                    <a href="cennik.html">Cennik</a>
+
+                    <a href="https://booksy.com/pl-pl/121304_no-to-pieknie-wizaz-i-kosmetyka_paznokcie_22068_bydgoszcz"
+                       target="_blank">
+                        Umów wizytę
+                    </a>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Modrzewiowa Studio Urody</p>
+</footer>
+
+</body>
+</html>
